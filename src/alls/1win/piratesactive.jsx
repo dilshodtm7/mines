@@ -5,7 +5,17 @@ import Skull3 from "./3.png";
 import Diamond from "./red.png";
 import "./index.css";
 
+import { useNavigate } from "react-router-dom";
+
+  
+
+
+
+
 const PiratesActive = () => {
+   const language = localStorage.getItem("country")
+  const navigate = useNavigate();
+
   const [activeSkull, setActiveSkull] = useState(null);
   const [buttonText, setButtonText] = useState("Play now");
 
@@ -22,7 +32,9 @@ const PiratesActive = () => {
         <div className="container-skull">
           <div className="stap">
             <div className="skull-container">
-              {activeSkull === 1 && <img src={Diamond} className="diamond" alt="Diamond" />}
+              {activeSkull === 1 && (
+                <img src={Diamond} className="diamond" alt="Diamond" />
+              )}
               <img
                 src={Skull1}
                 className={`skull ${activeSkull === 1 ? "up" : ""}`}
@@ -30,7 +42,9 @@ const PiratesActive = () => {
               />
             </div>
             <div className="skull-container">
-              {activeSkull === 2 && <img src={Diamond} className="diamond" alt="Diamond" />}
+              {activeSkull === 2 && (
+                <img src={Diamond} className="diamond" alt="Diamond" />
+              )}
               <img
                 src={Skull2}
                 className={`skull ${activeSkull === 2 ? "up" : ""}`}
@@ -38,7 +52,9 @@ const PiratesActive = () => {
               />
             </div>
             <div className="skull-container">
-              {activeSkull === 3 && <img src={Diamond} className="diamond" alt="Diamond" />}
+              {activeSkull === 3 && (
+                <img src={Diamond} className="diamond" alt="Diamond" />
+              )}
               <img
                 src={Skull3}
                 className={`skull ${activeSkull === 3 ? "up" : ""}`}
@@ -53,6 +69,26 @@ const PiratesActive = () => {
           </div>
         </div>
       </div>
+      {language === "RUS" && (
+        <button className="orqaga" onClick={() => navigate("/1win/pirates")}>
+          {" "}
+          ◀ НАЗАД
+        </button>
+      )}
+
+      {language === "ENG" && (
+        <button className="orqaga" onClick={() => navigate("/1win/pirates")}>
+          {" "}
+          ◀ BACK
+        </button>
+      )}
+
+      {language !== "RUS" && language !== "ENG" && (
+        <button className="orqaga" onClick={() => navigate("/1win/pirates")}>
+          {" "}
+          ◀ ORQAGA
+        </button>
+      )}
     </>
   );
 };
