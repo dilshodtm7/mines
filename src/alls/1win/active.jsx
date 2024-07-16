@@ -3,8 +3,12 @@ import Avia from "../../assets/avi.png";
 import Rocket from "../../assets/796987.png";
 import Jet from "../../assets/Lucky-Jet.jpg";
 import "./index.css";
+import { useNavigate } from "react-router-dom";
+
 
 const IndexActive = () => {
+  const language = localStorage.getItem("country")
+  const navigate = useNavigate();
   const getRandomIntInclusive = (min, max) => {
     min = Math.ceil(1);
     max = Math.floor(9);
@@ -65,6 +69,23 @@ const IndexActive = () => {
           </div>
         </div>
       </div>
+      {language === "RUS" && (
+        <button className="orqaga" onClick={() => navigate("/")}>
+          ◀ НАЗАД
+        </button>
+      )}
+
+      {language === "ENG" && (
+        <button className="orqaga" onClick={() => navigate("/")}>
+          ◀ BACK
+        </button>
+      )}
+
+      {language !== "RUS" && language !== "ENG" && (
+        <button className="orqaga" onClick={() => navigate("/")}>
+          ◀ ORQAGA
+        </button>
+      )}
     </>
   );
 };
