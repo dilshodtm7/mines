@@ -412,3 +412,13 @@ left: 25px;
 
 }
 
+.orqaga{
+  margin-top: -50px;
+  width: 180px;
+  height: 40px;
+  background-color:green ;
+  border-radius: 5px;
+  border: solid #fff;
+  border-width: thin;
+  font-size: 30px;
+}
