@@ -47,7 +47,6 @@ const all = () => {
 </Routes>
 
 
-   <Footer/>
    </>
   )
 }
