@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import Star from "./6.png";
 import Blue from "./4.png";
 import "./index.css";
+import { useNavigate } from "react-router-dom";
 
 const IndexActive = () => {
+  const language = localStorage.getItem("country");
+  const navigate = useNavigate();
   const [current, setCurrent] = useState(3);
   const [activeStars, setActiveStars] = useState(Array(25).fill(false));
   const [buttonText, setButtonText] = useState("START");
@@ -65,12 +68,38 @@ const IndexActive = () => {
           ))}
         </div>
         <div className="d-flexbtn">
-          <button className="btnss" onClick={handleClickMinus}>◀</button>
+          <button className="btnss" onClick={handleClickMinus}>
+            ◀
+          </button>
           <span className="spanss">{current}</span>
-          <button className="btnss" onClick={handleClick}>▶</button>
-          <button className="btnstart" onClick={handleStartClick}>{buttonText}</button>
+          <button className="btnss" onClick={handleClick}>
+            ▶
+          </button>
+          <button className="btnstart" onClick={handleStartClick}>
+            {buttonText}
+          </button>
         </div>
       </div>
+      {language === "RUS" && (
+        <button className="orqaga" onClick={() => navigate("/1win/mines")}>
+          {" "}
+          ◀ НАЗАД
+        </button>
+      )}
+
+      {language === "ENG" && (
+        <button className="orqaga" onClick={() => navigate("/1win/mines")}>
+          {" "}
+          ◀ BACK
+        </button>
+      )}
+
+      {language !== "RUS" && language !== "ENG" && (
+        <button className="orqaga" onClick={() => navigate("/1win/mines")}>
+          {" "}
+          ◀ ORQAGA
+        </button>
+      )}
     </>
   );
 };
