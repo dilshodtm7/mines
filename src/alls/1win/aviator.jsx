@@ -38,7 +38,7 @@ const Aviator = () => {
         <div className="container">
             <div className="center">
                 {language === "RUS" && (
-                    <form onSubmit={(e) => handleSubmit(e, "btn-a1", "Подождите")} className='form'>
+                  <>  <form onSubmit={(e) => handleSubmit(e, "btn-a1", "Подождите")} className='form'>
                         <img src={Avia} className="jets" alt="Aviator" />
                         <label htmlFor="" className='label'>Введите Свой 1WIN ID</label>
                         <input required
@@ -51,10 +51,12 @@ const Aviator = () => {
                         />
                         <button type="submit" className='btn-submit' id="btn-a1">Вход</button>
                     </form>
+                                        <button className="orqaga" onClick={() => navigate("/")}> ◀ Назад</button>
+                                        </> 
                 )}
 
                 {language === "ENG" && (
-                    <form onSubmit={(e) => handleSubmit(e, "btn-a2", "WAIT")} className='form'>
+              <>      <form onSubmit={(e) => handleSubmit(e, "btn-a2", "WAIT")} className='form'>
                         <img src={Avia} className="jets" alt="Aviator" />
                         <label htmlFor="" className='label'>Enter Your 1WIN ID</label>
                         <input 
@@ -68,10 +70,12 @@ const Aviator = () => {
                         />
                         <button type="submit" className='btn-submit' id="btn-a2">Submit</button>
                     </form>
+                                        <button className="orqaga" onClick={() => navigate("/")}> ◀ BACK</button>
+                                        </> 
                 )}
 
                 {language !== "RUS" && language !== "ENG" && (
-                    <form onSubmit={(e) => handleSubmit(e, "btn-a3", "KUTING")} className='form'>
+                 <>   <form onSubmit={(e) => handleSubmit(e, "btn-a3", "KUTING")} className='form'>
                         <img src={Avia} className="jets" alt="Aviator" />
                         <label htmlFor="" className='label'>1WIN ID kiriting</label>
                         <input required
@@ -84,6 +88,8 @@ const Aviator = () => {
                         />
                         <button type="submit" className='btn-submit' id="btn-a3">Kirish</button>
                     </form>
+                                        <button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
+                                        </> 
                 )}
             </div>
         </div>
