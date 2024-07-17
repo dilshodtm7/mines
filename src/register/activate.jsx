@@ -31,8 +31,9 @@ if (language === "RUS") {
           <button className="btn-buy">90 - Дней : 7000 Рубль</button>
         </a>
         </div>
-        <button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
+        
       </div>
+      <button className="orqaga" onClick={() => navigate("/")}> ◀ Назад</button>
     </>
   );
 }
@@ -65,7 +66,7 @@ if (language === "ENG") {
           <button className="btn-buy">90 - day : 70 $</button>
         </a>
         </div>
-        <button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
+        <button className="orqaga" onClick={() => navigate("/")}> ◀ BACK</button>
       </div>
     </>
   );
