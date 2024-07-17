@@ -20,10 +20,10 @@ if (language === "UZ") {
         </a>
         
         </div>
-        <button className="orqaga" onClick={() => navigate("/")}> ◀ Назад</button>
+        
       </div>
 
-      
+      <button className="orqaga" onClick={() => navigate("/")}> ◀ Назад</button>
       
     </>
   );
@@ -43,8 +43,8 @@ if (language === "ENG") {
         </a>
         
         </div>
-        <button className="orqaga" onClick={() => navigate("/")}> ◀ BACK</button>
-      </div>
+        
+      </div><button className="orqaga" onClick={() => navigate("/")}> ◀ BACK</button>
     </>
   );
 }
@@ -62,8 +62,8 @@ if (language === "ENG") {
         </a>
         
         </div>
-        <button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
-      </div>
+        
+      </div><button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
     </>
   );
 };
