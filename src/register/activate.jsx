@@ -20,10 +20,10 @@ if (language === "UZ") {
         </a>
         
         </div>
-        
+        <button className="orqaga" onClick={() => navigate("/")}> ◀ Назад</button>
       </div>
 
-      <button className="orqaga" onClick={() => navigate("/")}> ◀ Назад</button>
+      
       
     </>
   );
@@ -41,10 +41,10 @@ if (language === "ENG") {
         <a href="https://t.me/AviaBot_admin" className="a">
           <button className="btn-buy">ACTIVATE</button>
         </a>
-        
+        </div><button className="orqaga" onClick={() => navigate("/")}> ◀ BACK</button>
         </div>
         
-      </div><button className="orqaga" onClick={() => navigate("/")}> ◀ BACK</button>
+      
     </>
   );
 }
@@ -62,8 +62,8 @@ if (language === "ENG") {
         </a>
         
         </div>
-        
-      </div><button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
+        <button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
+      </div>
     </>
   );
 };
