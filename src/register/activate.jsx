@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const activate = () => {
 const language = localStorage.getItem("country");
-
+const navigate = useNavigate();
+  
 if (language === "RUS") {
   return (
     <>
