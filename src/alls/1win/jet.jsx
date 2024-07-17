@@ -52,7 +52,7 @@ const JetComponent = () => {
                 required
                 type="number"
                 min="40000"
-                max="9999999"
+                max="999999999"
                 onChange={(e) => setId(e.target.value)}
                 className="inputs"
                 placeholder="Введите Свой 1WIN ID"
@@ -83,7 +83,7 @@ const JetComponent = () => {
                 required
                 type="number"
                 min="40000"
-                max="9999999"
+                max="999999999"
                 onChange={(e) => setId(e.target.value)}
                 className="inputs"
                 placeholder="Enter Your 1WIN ID"
@@ -114,7 +114,7 @@ const JetComponent = () => {
                 required
                 type="number"
                 min="40000"
-                max="9999999"
+                max="999999999"
                 onChange={(e) => setId(e.target.value)}
                 className="inputs"
                 placeholder="1WIN ID kiriting"
