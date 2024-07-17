@@ -31,6 +31,7 @@ if (language === "RUS") {
           <button className="btn-buy">90 - Дней : 7000 Рубль</button>
         </a>
         </div>
+        <button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
       </div>
     </>
   );
@@ -64,6 +65,7 @@ if (language === "ENG") {
           <button className="btn-buy">90 - day : 70 $</button>
         </a>
         </div>
+        <button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
       </div>
     </>
   );
@@ -96,6 +98,7 @@ if (language === "ENG") {
           <button className="btn-buy">90 - kun uchun : 750 000 so'm</button>
         </a>
         </div>
+        <button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
       </div>
     </>
   );
