@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const activation = () => {
+      const navigate = useNavigate();
 const language = localStorage.getItem("country");
 
 if (language === "UZ") {
@@ -18,6 +20,7 @@ if (language === "UZ") {
         </a>
         
         </div>
+        <button className="orqaga" onClick={() => navigate("/")}> ◀ Назад</button>
       </div>
 
       
@@ -40,6 +43,7 @@ if (language === "ENG") {
         </a>
         
         </div>
+        <button className="orqaga" onClick={() => navigate("/")}> ◀ BACK</button>
       </div>
     </>
   );
@@ -58,6 +62,7 @@ if (language === "ENG") {
         </a>
         
         </div>
+        <button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
       </div>
     </>
   );
