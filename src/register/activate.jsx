@@ -1,30 +1,40 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const activation = () => {
-      const navigate = useNavigate();
+const activate = () => {
+  const navigate = useNavigate();
 const language = localStorage.getItem("country");
 
-if (language === "UZ") {
+if (language === "RUS") {
   return (
     <>
-
       <div className="container-reg">
-      <span className='spans'>Sizda botdan foydalanish uchun ruxsat yo'q</span>
+      <span className='spans'>У вас нет разрешения для использование бота</span>
         
         <hr className="hrr" />
-        <span className="spans">AKTIVATSIYA</span>
+        <span className="spans">Купить</span>
         <div className="d-blocked">
-        <a href="https://t.me/AviaBot_admin" className="a">
-          <button className="btn-buy">AKTIVATSIYA QILISH</button>
+        <a href="" className="a">
+          <button className="btn-buy">15 - Дней  : 1500 Рубль</button>
         </a>
-        
+        <a href="" className="a">
+          <button className="btn-buy">20 - Дней  : 2000 Рубль</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">30 - Дней : 3000 Рубль</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">50 - Дней : 4000 Рубль</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">60 - Дней : 5000 Рубль</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">90 - Дней : 7000 Рубль</button>
+        </a>
         </div>
-        <button className="orqaga" onClick={() => navigate("/")}> ◀ Назад</button>
+          <button className="orqaga" onClick={() => navigate("/")}> ◀ Назад</button>
       </div>
-
-      
-      
     </>
   );
 }
@@ -36,15 +46,29 @@ if (language === "ENG") {
       <span className='spans'>You do not have permission to use the bot</span>
         
         <hr className="hrr" />
-        <span className="spans">ACTIVATION</span>
+        <span className="spans">BUY</span>
         <div className="d-blocked">
-        <a href="https://t.me/AviaBot_admin" className="a">
-          <button className="btn-buy">ACTIVATE</button>
+        <a href="" className="a">
+          <button className="btn-buy">15 - day : 15 $</button>
         </a>
-        </div><button className="orqaga" onClick={() => navigate("/")}> ◀ BACK</button>
+        <a href="" className="a">
+          <button className="btn-buy">20 - day : 20 $</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">30 - day : 30 $</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">50 - day : 40 $</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">60 - day : 50 $</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">90 - day : 70 $</button>
+        </a>
         </div>
-        
-      
+        <button className="orqaga" onClick={() => navigate("/")}> ◀ BACK</button>
+      </div>
     </>
   );
 }
@@ -52,20 +76,36 @@ if (language === "ENG") {
   return (
     <>
       <div className="container-reg">
-      <span className='spans'>У вас нет разрешения для использование бота</span>
+      <span className='spans'>Sizda botdan foydalanish uchun ruxsat yo'q</span>
         
         <hr className="hrr" />
-        <span className="spans">Активация</span>
+        <span className="spans">SOTIB OLISH</span>
         <div className="d-blocked">
-        <a href="https://t.me/AviaBot_admin" className="a">
-          <button className="btn-buy">Активировать</button>
+        <a href="" className="a">
+          <button className="btn-buy">15 - kun uchun : 200 000 so'm</button>
         </a>
-        
+        <a href="" className="a">
+          <button className="btn-buy">20 - kun uchun : 250 000 so'm</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">30 - kun uchun : 350 000 so'm</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">50 - kun uchun : 500 000 so'm</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">60 - kun uchun : 600 000 so'm</button>
+        </a>
+        <a href="" className="a">
+          <button className="btn-buy">90 - kun uchun : 750 000 so'm</button>
+        </a>
         </div>
-        <button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
+          <button className="orqaga" onClick={() => navigate("/")}> ◀ ORQAGA</button>
       </div>
     </>
   );
 };
 
-export default activation;
+export default activate;
+
+
