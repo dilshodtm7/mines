@@ -1,7 +1,7 @@
 .container {
     display: block !important;
     width: 100%;
-    height: calc(100vh - 152px);
+
     background-color: #151028;
     text-align: center;
 
